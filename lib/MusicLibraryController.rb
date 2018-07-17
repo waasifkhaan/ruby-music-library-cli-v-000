@@ -80,8 +80,6 @@ class MusicLibraryController
         _genre.songs.sort {|a,b| a.name <=> b.name}.each_with_index do |song,i|
             puts "#{i+1}. #{song.artist.name} - #{song.name}"
         end 
-      else 
-      end
   end 
   # def play_song
   #   puts "Which song number would you like to play?"
