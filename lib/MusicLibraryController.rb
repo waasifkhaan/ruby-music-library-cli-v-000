@@ -50,16 +50,16 @@ class MusicLibraryController
       puts "#{i+1}. #{artist.name}"
     end 
   end 
-  # def list_genres
-  #   genres = Genre.all.sort {|a,b|
-  #   a.name <=> b.name}.uniq
-  #   # binding.pry
+  def list_genres
+    genres = Genre.all.sort {|a,b|
+    a.name <=> b.name}.uniq
+    # binding.pry
     
-  #   genres.each_with_index do |genre,i|
-  #     #binding.pry
-  #     puts "#{i+1}. #{genre.name}"
-  #   end 
-  # end
+    genres.each_with_index do |genre,i|
+      #binding.pry
+      puts "#{i+1}. #{genre.name}"
+    end 
+  end
   # def list_songs_by_artist
   #   puts "Please enter the name of an artist:"
   #   artist_name = gets.strip
