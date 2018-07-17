@@ -43,6 +43,9 @@ class Song
     song.genre = genre
     song
   end 
+  def self.create_from_filename(filename)
+    self.new_from_filename(filename).save
+  end 
     
   # def self.find_by_name(song_name)
   #   @@all.detect {|song| song.name == song_name}
