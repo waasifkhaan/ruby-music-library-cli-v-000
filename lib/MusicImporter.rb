@@ -8,7 +8,6 @@ class MusicImporter
   end 
   
   def import
-    binding.pry
     self.files.collect{ |filename| Song.create_from_filename(filename) }
   end
 end 
