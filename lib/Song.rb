@@ -34,6 +34,9 @@ class Song
     @genre = genre 
     @genre.songs << self  unless @genre.songs.include?(self)
   end 
+  
+  def self.new_from_filename
+    
   # def self.find_by_name(song_name)
   #   @@all.detect {|song| song.name == song_name}
   # end 
