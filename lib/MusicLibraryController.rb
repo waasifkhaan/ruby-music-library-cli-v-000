@@ -44,14 +44,14 @@ class MusicLibraryController
    puts "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}" 
    end 
   end 
-  # def list_artists
-  #   artists = Artist.all.sort {|a,b|
-  #   a.name <=> b.name}
+  def list_artists
+    artists = Artist.all.sort {|a,b|
+    a.name <=> b.name}
     
-  #   artists.each_with_index do |artist,i|
-  #     puts "#{i+1}. #{artist.name}"
-  #   end 
-  # end 
+    artists.each_with_index do |artist,i|
+      puts "#{i+1}. #{artist.name}"
+    end 
+  end 
   # def list_genres
   #   genres = Genre.all.sort {|a,b|
   #   a.name <=> b.name}.uniq
