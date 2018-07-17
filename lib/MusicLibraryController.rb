@@ -51,12 +51,8 @@ class MusicLibraryController
     end 
   end 
   def list_genres
-    genres = Genre.all.sort {|a,b|
-    a.name <=> b.name}.uniq
-    # binding.pry
-    
+    genres = Genre.all.sort {|a,b| a.name <=> b.name}.uniq
     genres.each_with_index do |genre,i|
-      #binding.pry
       puts "#{i+1}. #{genre.name}"
     end 
   end
